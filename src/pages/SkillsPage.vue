@@ -2,59 +2,44 @@
 <script setup>
 const skillGroups = [
   {
-    title: 'Programming Languages',
+    title: 'Languages & Frameworks',
     icon: 'mdi-code-braces-box',
     skills: [
       { name: 'C#', icon: 'mdi-language-csharp', color: '#239120' },
       { name: 'Python', icon: 'mdi-language-python', color: '#3776AB' },
-      { name: 'JavaScript', icon: 'mdi-language-javascript', color: '#F7DF1E' }
-    ]
-  },
-  {
-    title: 'Frameworks / Libraries',
-    icon: 'mdi-code-tags',
-    skills: [
-      { name: '.NET Core', icon: 'mdi-microsoft', color: '#512BD4' },
+      { name: 'JavaScript', icon: 'mdi-language-javascript', color: '#F7DF1E' },
       { name: 'Vue 3', icon: 'mdi-vuejs', color: '#42b883' },
+      { name: '.NET Core', icon: 'mdi-microsoft', color: '#512BD4' },
       { name: 'Vuetify', icon: 'mdi-vuetify', color: '#1867C0' },
-      { name: 'Tailwind CSS', icon: 'mdi-tailwind', color: '#38B2AC' },
-      { name: 'Odoo', icon: 'mdi-odoo', color: '#875A7B' },
-      { name: 'Flutter', icon: 'mdi-flutter', color: '#02569B' }
+      { name: 'Tailwind CSS', icon: 'mdi-tailwind', color: '#38B2AC' }
     ]
   },
   {
-    title: 'Back-End',
+    title: 'Backend & APIs',
+    icon: 'mdi-server',
+    skills: [
+      { name: 'RESTful API Design', icon: 'mdi-api', color: '#22d3ee' },
+      { name: 'JWT Authentication', icon: 'mdi-shield-key', color: '#FF8C00' },
+      { name: 'RBAC', icon: 'mdi-account-key', color: '#FF5722' },
+      { name: 'Unit/Integration Testing', icon: 'mdi-flask', color: '#22d3ee' }
+    ]
+  },
+  {
+    title: 'Databases',
     icon: 'mdi-database',
     skills: [
-      { name: 'REST APIs', icon: 'mdi-api', color: '#22d3ee' },
-      { name: 'SQL', icon: 'mdi-database', color: '#F29111' },
-      { name: 'Python', icon: 'mdi-language-python', color: '#3776AB' },
-      { name: '.NET Core', icon: 'mdi-microsoft', color: '#512BD4' }
+      { name: 'SQL Server', icon: 'mdi-microsoft-sql-server', color: '#E53E3E' },
+      { name: 'MySQL', icon: 'mdi-database', color: '#00758F' },
+      { name: 'PostgreSQL', icon: 'mdi-database', color: '#336791' }
     ]
   },
   {
-    title: 'Front-End',
-    icon: 'mdi-monitor-dashboard',
-    skills: [
-      { name: 'HTML5', icon: 'mdi-language-html5', color: '#E44D26' },
-      { name: 'CSS3', icon: 'mdi-language-css3', color: '#1572B6' },
-      { name: 'Vue.js', icon: 'mdi-vuejs', color: '#42b883' },
-      { name: 'Responsive UI', icon: 'mdi-responsive', color: '#22d3ee' }
-    ]
-  },
-  {
-    title: 'Device & Hardware',
-    icon: 'mdi-chip',
-    skills: [
-      { name: 'Sinosecu card readers', icon: 'mdi-credit-card', color: '#22d3ee' }
-    ]
-  },
-  {
-    title: 'Tools / Platforms',
+    title: 'Tools & Platforms',
     icon: 'mdi-tools',
     skills: [
       { name: 'Git', icon: 'mdi-git', color: '#F05032' },
       { name: 'GitHub', icon: 'mdi-github', color: '#181717' },
+      { name: 'SourceTree', icon: 'mdi-source-repository', color: '#0052CC' },
       { name: 'Docker', icon: 'mdi-docker', color: '#2496ED' },
       { name: 'Firebase', icon: 'mdi-fire', color: '#FFCA28' },
       { name: 'iText7', icon: 'mdi-file-pdf', color: '#FF0000' },
@@ -62,20 +47,30 @@ const skillGroups = [
     ]
   },
   {
-    title: 'Collaboration & Project Management',
-    icon: 'mdi-account-group',
+    title: 'Hardware & Integration',
+    icon: 'mdi-chip',
     skills: [
-      { name: 'Trello', icon: 'mdi-trello', color: '#0079BF' },
-      { name: 'Agile', icon: 'mdi-sprint', color: '#22d3ee' }
+      { name: 'Sinosecu card readers', icon: 'mdi-credit-card', color: '#22d3ee' },
+      { name: 'IC / License / Passport scanning', icon: 'mdi-card-account-details', color: '#22d3ee' }
     ]
   },
   {
-    title: 'Testing & Documentation',
-    icon: 'mdi-file-document-outline',
+    title: 'Project Management',
+    icon: 'mdi-account-group',
     skills: [
-      { name: 'UAT', icon: 'mdi-check', color: '#22d3ee' },
-      { name: 'SRS', icon: 'mdi-file-document-box', color: '#22d3ee' },
-      { name: 'User Manuals', icon: 'mdi-book-open', color: '#22d3ee' }
+      { name: 'Agile/Scrum', icon: 'mdi-sprint', color: '#22d3ee' },
+      { name: 'Trello', icon: 'mdi-trello', color: '#0079BF' },
+      { name: 'Taiga', icon: 'mdi-check-decagram', color: '#FF6F61' }
+    ]
+  },
+  {
+    title: 'Cloud & Hosting',
+    icon: 'mdi-cloud',
+    skills: [
+      { name: 'Plesk', icon: 'mdi-server', color: '#0072C6' },
+      { name: 'Cloudflare', icon: 'mdi-cloud', color: '#F38020' },
+      { name: 'Exabytes', icon: 'mdi-server-network', color: '#22d3ee' },
+      { name: 'Tailscale', icon: 'mdi-network', color: '#22d3ee' }
     ]
   }
 ]
